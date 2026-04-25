@@ -53,6 +53,7 @@ public class LoginSteps {
     	 homePage = new HomePage(BaseClass.driver);
 
          String actualTitle = homePage.getPageTitle();
+         System.out.println("Login message: " + actualTitle);
 
          Assert.assertEquals(actualTitle, "Products");
     }
