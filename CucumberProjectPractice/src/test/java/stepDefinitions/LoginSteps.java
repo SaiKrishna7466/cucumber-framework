@@ -51,10 +51,8 @@ public class LoginSteps {
     @Then("user should be logged into home page successfully")
     public void verifyLogin() {
     	 homePage = new HomePage(BaseClass.driver);
-
          String actualTitle = homePage.getPageTitle();
          System.out.println("Login message: " + actualTitle);
-
          Assert.assertEquals(actualTitle, "Products");
     }
 
