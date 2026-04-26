@@ -45,7 +45,7 @@ public class LoginSteps {
     public void verify_login() {
         String message = BaseClass.driver.findElement(By.id("flash")).getText();
         System.out.println("Login message: " + message);
-        Assert.assertEquals(message,"You logged into a secure area!");
+        Assert.assertEquals(message.trim(),"You logged into a secure area!");
     }
     
     @Then("user should be logged into home page successfully")
